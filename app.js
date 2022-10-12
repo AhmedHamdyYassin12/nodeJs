@@ -16,6 +16,12 @@ const server = http.createServer((req, res) => {
      * interested any more !
      */
     // process.exit();
+
+    /**
+     * here are some interesting methods can be called from the req and these are info from the req
+     * these info are quite importent to know it for the future.
+     */
+    console.log(req.url, req.method, req.headers);
 });
 
 server.listen(3000);
